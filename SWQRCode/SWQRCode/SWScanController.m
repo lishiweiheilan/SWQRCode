@@ -7,32 +7,24 @@
 //
 
 #import "SWScanController.h"
+#import <AVFoundation/AVFoundation.h>
 
 @interface SWScanController ()
-
+@property (strong,nonatomic)AVCaptureDevice * device;
+@property (strong,nonatomic)AVCaptureDeviceInput * input;
+@property (strong,nonatomic)AVCaptureMetadataOutput * output;
+@property (strong,nonatomic)AVCaptureSession * session;
+@property (strong,nonatomic)AVCaptureVideoPreviewLayer * preview;
 @end
 
 @implementation SWScanController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //测试
-    // Do any additional setup after loading the view.
+    self.device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
+    self.input = [AVCaptureDeviceInput deviceInputWithDevice:self.device error:nil];
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

@@ -54,6 +54,7 @@
 		84609E031FAC585100CCEB88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84609E101FAC61F700CCEB88 /* SWScanController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWScanController.h; sourceTree = "<group>"; };
 		84609E111FAC61F700CCEB88 /* SWScanController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWScanController.m; sourceTree = "<group>"; };
+		84609E131FAC6B3800CCEB88 /* resource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = resource.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +140,7 @@
 		84609E0F1FAC61BF00CCEB88 /* SWQRCode */ = {
 			isa = PBXGroup;
 			children = (
+				84609E131FAC6B3800CCEB88 /* resource.bundle */,
 				84609E101FAC61F700CCEB88 /* SWScanController.h */,
 				84609E111FAC61F700CCEB88 /* SWScanController.m */,
 			);
